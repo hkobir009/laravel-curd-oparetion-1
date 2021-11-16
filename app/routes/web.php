@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CurdController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+route::get('/',[CurdController::class,'index']);
+route::get('insert',[CurdController::class,'insert']);
+route::post('insert',[CurdController::class,'store']);
