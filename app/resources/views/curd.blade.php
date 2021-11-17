@@ -30,8 +30,8 @@
                                 <td>{{$information->phone_no}}</td>
                                 <td>{{$information->post_code}}</td>
                                 <td>
-                                    <a href=""><button type="submit" name="submit" class="btn btn-success">Edit</button></a>
-                                    <a href=""><button type="submit" name="submit" class="btn btn-danger">delete</button></a>
+                                    <a href="{{route('edit',[$information->id])}}"><button type="submit" name="submit" class="btn btn-success">Edit</button></a>
+                                    <a href="{{route('delete',[$information->id])}}"><button type="submit" name="submit" class="btn btn-danger">delete</button></a>
                                 </td>
                             </tr>
                             @endforeach
